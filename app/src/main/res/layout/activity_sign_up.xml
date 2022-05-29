@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061C29"
+    android:screenOrientation="portrait"
+    tools:context=".SignUp">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignUp"
+        android:layout_width="413dp"
+        android:layout_height="80dp"
+        android:background="#FF3E8284"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="133dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Sign Up"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#FFFFFF" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="320dp"
+        android:clickable="true"
+        app:backgroundTint="#003E8284"
+        app:layout_constraintBottom_toBottomOf="@+id/tbSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mapbox_ic_arrow_back" />
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="619dp"
+        android:background="@drawable/textfield_style"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbSignUp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <TextView
+            android:id="@+id/txvinfo"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center"
+            android:text="Enter Information"
+            android:textColor="@color/buttons"
+            android:textSize="30sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_firstname_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:baselineAligned="false"
+                android:textColorHint="#E2E574">
+
+                <EditText
+                    android:id="@+id/txbFirstName"
+                    android:layout_width="167dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="#E2E574"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:text=""
+                    android:textColor="#E2E367"
+                    android:textColorHint="#E2E574" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_lastname_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColorHint="#E2E574">
+
+                <EditText
+                    android:id="@+id/txbLastName"
+                    android:layout_width="167dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="#E2E574"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:text=""
+                    android:textColor="#E2E367"
+                    android:textColorHint="#E2E574" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_email_signup_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColorHint="#E2E574">
+
+                <EditText
+                    android:id="@+id/txbEmail"
+                    android:layout_width="167dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="#F1D052"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="textStart"
+                    android:textColor="#F1D052"
+                    android:textColorHint="#F1D052" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/text_password_signup_input_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textColorHint="#E2E574">
+
+                <EditText
+                    android:id="@+id/txbPassword"
+                    android:layout_width="167dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="#F1D052"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="textStart"
+                    android:textColor="#F1D052"
+                    android:textColorHint="#F1D052" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/swhMetricOrImperial"
+            android:layout_width="360dp"
+            android:layout_height="41dp"
+            android:background="@drawable/rounded_style"
+            android:lineSpacingExtra="8sp"
+            android:paddingStart="15sp"
+            android:text="Metric System (Kilometers - Km)"
+            android:textAlignment="center"
+            android:textColor="#E2E367"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="19dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="60dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/cmbTransportOptions"
+                android:layout_width="311dp"
+                android:layout_height="52dp"
+                android:background="@drawable/rounded_style"
+                android:gravity="center"
+                android:popupBackground="#061C29" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="65dp"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pgbSignUpProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/button_style"
+                android:text="Sign Up"
+                android:textColor="@color/mapboxWhite" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

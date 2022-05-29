@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TheNav</string>
+    <string name="user_location_permission_explanation">This app needs location permissions to show its functionality.</string>
+    <string name="user_location_permission_not_granted">You didn\'t grant location permissions.</string>
+    <string name="access_token">pk.eyJ1IjoibG91cmVuczQiLCJhIjoiY2s4c2hrZ2E3MGM3OTNtcGo2ZHp3dGg3cSJ9.qad6NcyLFJ8TjTch1cjc8w</string>
+    <string name="login_password_required">Please enter a valid Password</string>
+    <string name="login_email_required">Please enter a valid Email</string>
+    <string name="signup_password_required">Password is too short, must be 8 characters long</string>
+    <string name="signup_email_required">Please enter a valid Email</string>
+    <string name="firstname_required">Please enter your Name</string>
+    <string name="lastname_required">Please enter your Last Name</string>
+    <string name="don_t_have_an_accout">Don\'t have an accout?</string>
+</resources>

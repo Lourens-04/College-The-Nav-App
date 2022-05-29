@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "813690959523",
+    "firebase_url": "https://thenav-77d8b.firebaseio.com",
+    "project_id": "thenav-77d8b",
+    "storage_bucket": "thenav-77d8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813690959523:android:b430ebe930fab39564f116",
+        "android_client_info": {
+          "package_name": "com.thenav.thenav"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813690959523-840fpi6e8los4rccv5826g49rr4438tg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thenav.thenav",
+            "certificate_hash": "6c5d7c9752021516795d72e050a4b7bd91df84bd"
+          }
+        },
+        {
+          "client_id": "813690959523-45e7ajokqq77u6s7o91h76prf008h447.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvXDA1Nw_mEM9EPVekCqMl6GItv56r8N4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813690959523-45e7ajokqq77u6s7o91h76prf008h447.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

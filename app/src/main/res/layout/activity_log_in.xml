@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#061C29"
+    android:screenOrientation="portrait"
+    tools:context=".LogIn">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbSignUp2"
+        android:layout_width="413dp"
+        android:layout_height="80dp"
+        android:background="#FF3E8284"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingLeft="145dp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Log In"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="#FFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="363dp"
+        android:layout_height="577dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/textfield_style"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbSignUp2">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="37dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:text="The Nav"
+            android:textColor="@color/buttons"
+            android:textSize="50dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_email_signin_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#E2E574"
+            app:layout_constraintTop_toBottomOf="@+id/tbSignUp"
+            tools:layout_editor_absoluteX="0dp">
+
+            <EditText
+                android:id="@+id/txbEmail"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#F1D052"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="#F1D052"
+                android:textColorHint="#F1D052" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_password_signin_input_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#E2E574"
+            app:layout_constraintTop_toBottomOf="@+id/text_email_signin_input_layout"
+            tools:layout_editor_absoluteX="0dp">
+
+            <EditText
+                android:id="@+id/txbPassword"
+                android:layout_width="300dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#F1D052"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textAlignment="textStart"
+                android:textColor="#F1D052"
+                android:textColorHint="#F1D052" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <ProgressBar
+            android:id="@+id/prgbLogInProgress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnLogIn"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_style"
+            android:shadowColor="#FFFFFF"
+            android:text="Log In"
+            android:textColor="@color/mapboxWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prgbLogInProgress" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
+
+        <TextView
+            android:id="@+id/txvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="@string/don_t_have_an_accout"
+            android:textColor="#F1D052"
+            android:textColorHint="#F1D052" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
